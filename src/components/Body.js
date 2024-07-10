@@ -2,13 +2,15 @@ import React from 'react'
 import Sidebar from './Sidebar'
 import MainContainer from './MainContainer'
 
+
 const Body = () => {
+
   return (
     <div className='flex'>
-        <div>
+        <div className=''>
             <Sidebar/>
         </div>
-        <div>
+        <div className=''>
             <MainContainer/>
         </div>
     </div>

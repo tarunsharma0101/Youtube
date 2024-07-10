@@ -4,15 +4,25 @@ import { ImYoutube2 } from "react-icons/im";
 import { ImSearch } from "react-icons/im";
 import { IoMdNotifications } from "react-icons/io";
 import { FaUserCircle } from "react-icons/fa";
+import { useDispatch } from 'react-redux';
+import { toggleMenu } from '../utils/appSlice';
 
 
 const Head = () => {
+
+  const dispatch = useDispatch()
+
+  const toggleMenuHandler = () => {
+    dispatch(toggleMenu())
+  }
+
   return (
     <div className='text-white flex justify-between bg-black'>
 
         <div className='flex  flex-row gap-10 ml-10'>
             <div className='flex items-center '>
-               <GiHamburgerMenu className='text-4xl cursor-pointer'/>
+               <GiHamburgerMenu className='text-4xl cursor-pointer'
+               onClick={toggleMenuHandler}/>
             </div>
             <ImYoutube2 className="text-[100px]  cursor-pointer "/>
         </div>
