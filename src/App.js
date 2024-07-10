@@ -1,9 +1,14 @@
+import Body from "./components/Body";
+import Head from "./components/Head";
 
 
 function App() {
   return (
-    <div className="text-center font-bold">
-      <h1>A YOUTUBE CLONE</h1>
+    <div className="">
+      <Head/>
+      <div>
+        <Body/>
+      </div>
     </div>
   );
 }
