@@ -10,7 +10,7 @@ const Body = () => {
         <div className=''>
             <Sidebar/>
         </div>
-        <div className=''>
+        <div className='bg-black'>
             <Outlet/>
         </div>
     </div>
