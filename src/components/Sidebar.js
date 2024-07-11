@@ -20,6 +20,7 @@ import { FaBookOpen } from "react-icons/fa6";
 import { FiShoppingBag } from "react-icons/fi";
 import { FaPodcast } from "react-icons/fa";
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
 
@@ -32,7 +33,7 @@ const Sidebar = () => {
 
         <div className=' hover:-translate-y-1 transition-all delay-100 cursor-pointer'>
 
-            <h1 className='flex items-center ml-2 mb-4 gap-4'> <AiFillHome className='flex items-center '/>HOME</h1>
+        <Link to='/'> <h1 className='flex items-center ml-2 mb-4 gap-4'> <AiFillHome className='flex items-center '/>HOME</h1></Link>
         
         </div>
         

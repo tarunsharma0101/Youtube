@@ -24,7 +24,10 @@ const Head = () => {
                <GiHamburgerMenu className='text-4xl cursor-pointer'
                onClick={toggleMenuHandler}/>
             </div>
-            <ImYoutube2 className="text-[100px]  cursor-pointer "/>
+            <a href="/"><div>
+              <ImYoutube2 className="text-[100px]  cursor-pointer "/>
+            </div></a>
+             
         </div>
 
         <div className=' flex items-center p-3 w-5/12'>
